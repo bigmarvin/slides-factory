@@ -1,0 +1,76 @@
+# Slide Content Style Preferences
+# These guide how content should be structured and presented.
+# Can be overridden per-presentation or per-slide.
+
+# Default style preset
+preset: minimal-apple
+
+# Style presets define content guidelines
+presets:
+  minimal-apple:
+    description: "Apple keynote style - minimal text, maximum impact"
+    guidelines:
+      - One key message per slide
+      - Highlight critical terms and metrics, not sentences
+      - Use numbers and percentages prominently
+      - Prefer visuals over text
+      - Maximum 3-5 bullet points, each under 6 words
+      - No full sentences in bullets
+    max_bullets: 5
+    max_words_per_bullet: 6
+    prefer_metrics: true
+    highlight_keywords: true
+
+  detailed:
+    description: "More detailed slides for technical/documentation purposes"
+    guidelines:
+      - Full explanations allowed
+      - Code examples welcome
+      - Can include longer bullet points
+    max_bullets: 8
+    max_words_per_bullet: 15
+    prefer_metrics: false
+    highlight_keywords: false
+
+  storytelling:
+    description: "Narrative style with minimal text, speaker tells the story"
+    guidelines:
+      - Slides are visual anchors only
+      - One word or phrase per slide when possible
+      - Heavy use of images
+      - Speaker notes carry the content
+    max_bullets: 3
+    max_words_per_bullet: 4
+    prefer_metrics: true
+    highlight_keywords: true
+
+# Formatting rules for highlighted content
+formatting:
+  # How to mark critical terms in outline
+  keyword_marker: "**"           # **keyword** becomes highlighted
+  metric_marker: "`"             # `42%` becomes emphasized metric
+
+  # Visual treatment in slides
+  keyword_style: bold-accent     # bold-accent, underline, highlight-bg
+  metric_style: large-number     # large-number, badge, highlight-bg
+
+# Content transformation hints
+# These guide AI assistants when helping create/edit content
+ai_hints:
+  - "Convert long sentences to short keyword phrases"
+  - "Extract and emphasize numbers, percentages, metrics"
+  - "If a bullet has >6 words, suggest splitting or shortening"
+  - "Suggest relevant images or icons for key concepts"
+  - "Prefer active, impactful words over passive descriptions"
+
+# Examples of good vs bad content (for AI reference)
+examples:
+  bad:
+    - "We achieved a significant increase in our quarterly revenue compared to last year"
+    - "The system processes requests in a way that is much faster than before"
+    - "Users reported that they were generally satisfied with the new features"
+
+  good:
+    - "Revenue: **+47%** YoY"
+    - "**10x** faster processing"
+    - "**92%** user satisfaction"

@@ -72,7 +72,7 @@ Handlebars.registerHelper('renderContent', function(contentItem) {
     case 'bullets':
       return new Handlebars.SafeString(renderBullets(contentItem.items));
     case 'text':
-      return new Handlebars.SafeString(`<p>${escapeHtml(contentItem.text)}</p>`);
+      return new Handlebars.SafeString(`<p>${formatText(contentItem.text)}</p>`);
     case 'image':
       return new Handlebars.SafeString(
         `<img src="${escapeHtml(contentItem.src)}" alt="${escapeHtml(contentItem.alt || '')}" />`
@@ -97,7 +97,7 @@ function renderBullets(items, level = 0) {
     const itemLevel = item.level || 0;
 
     if (itemLevel === level) {
-      html += `<li>${escapeHtml(item.text)}`;
+      html += `<li>${formatText(item.text)}`;
 
       // Check for nested items
       const nested = [];
@@ -132,6 +132,21 @@ function escapeHtml(text) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+function formatText(text) {
+  if (!text) return '';
+
+  // First escape HTML
+  let formatted = escapeHtml(text);
+
+  // Format **keywords** as highlighted terms
+  formatted = formatted.replace(/\*\*([^*]+)\*\*/g, '<strong class="keyword">$1</strong>');
+
+  // Format `metrics` as emphasized numbers/metrics
+  formatted = formatted.replace(/`([^`]+)`/g, '<span class="metric">$1</span>');
+
+  return formatted;
 }
 
 // Generate HTML

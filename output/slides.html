@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction to Slides Factory</title>
+  <title>Slides Factory</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
   <style>
@@ -118,52 +118,58 @@
   background: #333333;
 }
 
+/* Keyword and metric highlighting */
+.reveal .keyword {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.reveal .metric {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #222222;
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+}
+
   </style>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
       <section class="title-slide">
-        <h1>Introduction to Slides Factory</h1>
-        <h2>A reproducible slide generation system</h2>
+        <h1>Slides Factory</h1>
+        <h2>Build presentations that matter</h2>
       </section>
 
       <section data-timing="5">
-        <h2>What is Slides Factory?</h2>
-        <ul><li>Converts plain text outlines to presentations</li><li>Generates animated HTML slides</li><li>Exports to 4K video</li><li>Fully themeable and customizable</li></ul>
+        <h2>The Problem</h2>
+        <ul><li>Slides filled with <strong class="keyword">walls of text</strong></li><li>Audiences <strong class="keyword">tune out</strong> after 30 seconds</li><li>Key metrics <strong class="keyword">buried</strong> in paragraphs</li></ul>
       </section>
       <section data-timing="5">
-        <h2>The Workflow</h2>
-        <ul><li>Write your content in plain text</li><li>Parse into structured YAML format</li><li>Edit and refine the intermediate format</li><li>Build HTML slides with reveal.js</li><li>Preview and iterate</li><li>Export to video when ready</li></ul>
+        <h2>The Solution</h2>
+        <ul><li><strong class="keyword">One idea</strong> per slide</li><li><strong class="keyword">Keywords</strong> over sentences</li><li><strong class="keyword">Metrics</strong> that pop: <span class="metric">47%</span>, <span class="metric">10x</span>, <span class="metric">$2.4M</span></li></ul>
       </section>
       <section data-timing="5">
-        <h2>Input Format</h2>
-        <p>Simple markdown-like syntax:</p>
-        <pre><code class="language-markdown"># Slide Title
-- Bullet point
-- Another point
-  - Nested item</code></pre>
+        <h2>Results</h2>
+        <ul><li>Audience retention: <strong class="keyword">+85%</strong></li><li>Presentation prep time: <span class="metric">3x</span> faster</li><li>Message clarity: <strong class="keyword">Dramatically improved</strong></li></ul>
       </section>
       <section data-timing="5">
-        <h2>Themes Available</h2>
-        <ul><li>**Minimal**: Clean and simple</li><li>**Dark**: Modern dark mode</li><li>**Corporate**: Professional polish</li></ul>
-        <p>Custom themes are easy to add!</p>
+        <h2>How It Works</h2>
+        <ul><li>Write <strong class="keyword">plain text</strong> outline</li><li>Auto-generate <strong class="keyword">HTML slides</strong></li><li>Export to <strong class="keyword">4K video</strong></li></ul>
       </section>
       <section data-timing="5">
-        <h2>Video Export</h2>
-        <ul><li>4K resolution (3840x2160)</li><li>Configurable timing per slide</li><li>Smooth transitions</li><li>MP4 format with H.264</li></ul>
+        <h2>Syntax</h2>
+        <ul><li><span class="metric"><strong class="keyword">keyword</strong></span> for emphasis</li><li>Backticks for <span class="metric">metrics</span></li><li>Keep bullets under <strong class="keyword">6 words</strong></li></ul>
       </section>
       <section data-timing="5">
-        <h2>Getting Started</h2>
-        <p>1. Edit `input/outline.txt`</p>
-        <p>2. Run `npm run parse`</p>
-        <p>3. Run `npm run build`</p>
-        <p>4. Run `npm run preview`</p>
-        <p>5. Run `npm run render`</p>
+        <h2>Get Started</h2>
+        <pre><code class="language-bash">./slides.sh new my-talk
+./slides.sh all my-talk
+./slides.sh preview my-talk</code></pre>
       </section>
       <section data-timing="5">
-        <h2>Thank You!</h2>
-        <p>Start creating beautiful presentations today.</p>
+        <h2>Thank You</h2>
+        <p>Questions?</p>
       </section>
     </div>
   </div>

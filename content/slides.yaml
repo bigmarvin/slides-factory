@@ -1,85 +1,68 @@
-title: Introduction to Slides Factory
-subtitle: A reproducible slide generation system
+title: Slides Factory
+subtitle: Build presentations that matter
 theme: minimal
 timing:
   default: 5
 slides:
-  - title: What is Slides Factory?
+  - title: The Problem
     content:
       - type: bullets
         items:
-          - text: Converts plain text outlines to presentations
+          - text: Slides filled with **walls of text**
             level: 0
-          - text: Generates animated HTML slides
+          - text: Audiences **tune out** after 30 seconds
             level: 0
-          - text: Exports to 4K video
+          - text: Key metrics **buried** in paragraphs
             level: 0
-          - text: Fully themeable and customizable
-            level: 0
-  - title: The Workflow
+  - title: The Solution
     content:
       - type: bullets
         items:
-          - text: Write your content in plain text
+          - text: "**One idea** per slide"
             level: 0
-          - text: Parse into structured YAML format
+          - text: "**Keywords** over sentences"
             level: 0
-          - text: Edit and refine the intermediate format
+          - text: "**Metrics** that pop: `47%`, `10x`, `$2.4M`"
             level: 0
-          - text: Build HTML slides with reveal.js
-            level: 0
-          - text: Preview and iterate
-            level: 0
-          - text: Export to video when ready
-            level: 0
-  - title: Input Format
+  - title: Results
     content:
-      - type: text
-        text: "Simple markdown-like syntax:"
+      - type: bullets
+        items:
+          - text: "Audience retention: **+85%**"
+            level: 0
+          - text: "Presentation prep time: `3x` faster"
+            level: 0
+          - text: "Message clarity: **Dramatically improved**"
+            level: 0
+  - title: How It Works
+    content:
+      - type: bullets
+        items:
+          - text: Write **plain text** outline
+            level: 0
+          - text: Auto-generate **HTML slides**
+            level: 0
+          - text: Export to **4K video**
+            level: 0
+  - title: Syntax
+    content:
+      - type: bullets
+        items:
+          - text: "`**keyword**` for emphasis"
+            level: 0
+          - text: Backticks for `metrics`
+            level: 0
+          - text: Keep bullets under **6 words**
+            level: 0
+  - title: Get Started
+    content:
       - type: code
-        language: markdown
+        language: bash
         code: |-
-          # Slide Title
-          - Bullet point
-          - Another point
-            - Nested item
-  - title: Themes Available
-    content:
-      - type: bullets
-        items:
-          - text: "**Minimal**: Clean and simple"
-            level: 0
-          - text: "**Dark**: Modern dark mode"
-            level: 0
-          - text: "**Corporate**: Professional polish"
-            level: 0
-      - type: text
-        text: Custom themes are easy to add!
-  - title: Video Export
-    content:
-      - type: bullets
-        items:
-          - text: 4K resolution (3840x2160)
-            level: 0
-          - text: Configurable timing per slide
-            level: 0
-          - text: Smooth transitions
-            level: 0
-          - text: MP4 format with H.264
-            level: 0
-  - title: Getting Started
+          ./slides.sh new my-talk
+          ./slides.sh all my-talk
+          ./slides.sh preview my-talk
+  - title: Thank You
     content:
       - type: text
-        text: 1. Edit `input/outline.txt`
-      - type: text
-        text: 2. Run `npm run parse`
-      - type: text
-        text: 3. Run `npm run build`
-      - type: text
-        text: 4. Run `npm run preview`
-      - type: text
-        text: 5. Run `npm run render`
-  - title: Thank You!
-    content:
-      - type: text
-        text: Start creating beautiful presentations today.
+        text: Questions?

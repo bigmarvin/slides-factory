@@ -6,6 +6,48 @@ This file provides context for Claude Code sessions working on this project.
 
 Slides Factory is a Node.js CLI tool that converts plain text outlines into reveal.js HTML presentations and 4K videos.
 
+## Content Style Preferences
+
+**IMPORTANT**: The user prefers Apple keynote style slides. When helping create or edit slide content:
+
+### Default Style: Minimal/Apple
+- **One key message per slide**
+- **Highlight metrics and keywords, not full sentences**
+- Maximum 3-5 bullets, each under 6 words
+- Use `**keyword**` to mark critical terms
+- Use backticks for metrics: \`47%\`, \`10x\`, \`$2.4M\`
+- Prefer impactful fragments over complete sentences
+
+### Good Examples
+```
+# Revenue Growth
+- **+47%** year over year
+- **$2.4M** Q4 revenue
+- **3x** customer expansion
+```
+
+### Bad Examples (avoid)
+```
+# Revenue Growth
+- We achieved a significant increase in our quarterly revenue compared to last year
+- The total revenue for Q4 was approximately 2.4 million dollars
+- Our customer base expanded to three times its original size
+```
+
+### Per-Slide Override
+When a slide needs more detail, add `style: detailed` in the YAML:
+```yaml
+slides:
+  - title: "Technical Architecture"
+    style: detailed    # Override: allows longer content
+    content:
+      - type: bullets
+        items:
+          - text: "Detailed technical explanation allowed here"
+```
+
+See `preferences.yaml` for full style configuration.
+
 ## Architecture
 
 ```

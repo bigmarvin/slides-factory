@@ -1,70 +1,58 @@
-# Introduction to Slides Factory
-## A reproducible slide generation system
+# Slides Factory
+## Build presentations that matter
 
 ---
 
-# What is Slides Factory?
+# The Problem
 
-- Converts plain text outlines to presentations
-- Generates animated HTML slides
-- Exports to 4K video
-- Fully themeable and customizable
-
----
-
-# The Workflow
-
-- Write your content in plain text
-- Parse into structured YAML format
-- Edit and refine the intermediate format
-- Build HTML slides with reveal.js
-- Preview and iterate
-- Export to video when ready
+- Slides filled with **walls of text**
+- Audiences **tune out** after 30 seconds
+- Key metrics **buried** in paragraphs
 
 ---
 
-# Input Format
+# The Solution
 
-Simple markdown-like syntax:
+- **One idea** per slide
+- **Keywords** over sentences
+- **Metrics** that pop: `47%`, `10x`, `$2.4M`
 
-```markdown
-# Slide Title
-- Bullet point
-- Another point
-  - Nested item
+---
+
+# Results
+
+- Audience retention: **+85%**
+- Presentation prep time: `3x` faster
+- Message clarity: **Dramatically improved**
+
+---
+
+# How It Works
+
+- Write **plain text** outline
+- Auto-generate **HTML slides**
+- Export to **4K video**
+
+---
+
+# Syntax
+
+- `**keyword**` for emphasis
+- Backticks for `metrics`
+- Keep bullets under **6 words**
+
+---
+
+# Get Started
+
+```bash
+./slides.sh new my-talk
+./slides.sh all my-talk
+./slides.sh preview my-talk
 ```
 
 ---
 
-# Themes Available
+# Thank You
 
-- **Minimal**: Clean and simple
-- **Dark**: Modern dark mode
-- **Corporate**: Professional polish
-
-Custom themes are easy to add!
-
----
-
-# Video Export
-
-- 4K resolution (3840x2160)
-- Configurable timing per slide
-- Smooth transitions
-- MP4 format with H.264
-
----
-
-# Getting Started
-
-1. Edit `input/outline.txt`
-2. Run `npm run parse`
-3. Run `npm run build`
-4. Run `npm run preview`
-5. Run `npm run render`
-
----
-
-# Thank You!
-
-Start creating beautiful presentations today.
+Questions?

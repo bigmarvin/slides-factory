@@ -119,3 +119,19 @@
 .reveal .controls {
   color: #667eea;
 }
+
+/* Keyword and metric highlighting */
+.reveal .keyword {
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.reveal .metric {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #f0f0f0;
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+  background: rgba(167, 139, 250, 0.2);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}

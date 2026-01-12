@@ -108,3 +108,16 @@
 .reveal .progress span {
   background: #333333;
 }
+
+/* Keyword and metric highlighting */
+.reveal .keyword {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.reveal .metric {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #222222;
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+}

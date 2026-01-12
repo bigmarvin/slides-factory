@@ -137,3 +137,19 @@
 .reveal em {
   color: #0369a1;
 }
+
+/* Keyword and metric highlighting */
+.reveal .keyword {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.reveal .metric {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #0f172a;
+  font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  background: #dbeafe;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+}
