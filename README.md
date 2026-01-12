@@ -41,7 +41,7 @@ vi presentations/my-talk/outline.txt
 
 Create a plain text file with this format:
 
-```markdown
+````
 # Presentation Title
 ## Your Name
 
@@ -69,7 +69,7 @@ def hello():
 ---
 
 # Thank You!
-```
+````
 
 ### Syntax
 
