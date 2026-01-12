@@ -1,0 +1,33 @@
+# Presentation Title
+## Your Name
+
+---
+
+# Introduction
+
+- First key point
+- Second key point
+- Third key point
+
+---
+
+# Main Content
+
+Explain your main ideas here.
+
+- Supporting point
+  - Detail one
+  - Detail two
+
+---
+
+# Conclusion
+
+- Summary point one
+- Summary point two
+
+---
+
+# Thank You!
+
+Questions?

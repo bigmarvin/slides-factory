@@ -1,0 +1,7 @@
+# Presentation-specific config (overrides global config.yaml)
+# Uncomment to customize:
+
+# theme: minimal
+# transition: fade
+# timing:
+#   default: 5

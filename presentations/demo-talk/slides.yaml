@@ -1,0 +1,40 @@
+title: Presentation Title
+subtitle: Your Name
+theme: minimal
+timing:
+  default: 5
+slides:
+  - title: Introduction
+    content:
+      - type: bullets
+        items:
+          - text: First key point
+            level: 0
+          - text: Second key point
+            level: 0
+          - text: Third key point
+            level: 0
+  - title: Main Content
+    content:
+      - type: text
+        text: Explain your main ideas here.
+      - type: bullets
+        items:
+          - text: Supporting point
+            level: 0
+          - text: Detail one
+            level: 1
+          - text: Detail two
+            level: 1
+  - title: Conclusion
+    content:
+      - type: bullets
+        items:
+          - text: Summary point one
+            level: 0
+          - text: Summary point two
+            level: 0
+  - title: Thank You!
+    content:
+      - type: text
+        text: Questions?

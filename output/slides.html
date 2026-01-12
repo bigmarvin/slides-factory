@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Slides Factory</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <style>
+    /* Minimal Theme - Clean and simple */
+
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 42px;
+  background: #ffffff;
+  color: #333333;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: #222222;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+.reveal .title-slide {
+  text-align: center;
+}
+
+.reveal .title-slide h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.3em;
+}
+
+.reveal .title-slide h2 {
+  font-size: 1.2em;
+  color: #666666;
+  font-weight: 400;
+}
+
+.reveal p {
+  line-height: 1.6;
+  margin: 0.8em 0;
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.reveal li {
+  margin: 0.6em 0;
+  line-height: 1.4;
+}
+
+.reveal ul ul {
+  margin-top: 0.4em;
+  font-size: 0.9em;
+  color: #555555;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+  font-size: 0.55em;
+}
+
+.reveal code {
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+  background: #f5f5f5;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 1em 1.5em;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  line-height: 1.5;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.reveal img {
+  max-width: 85%;
+  max-height: 55vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reveal section {
+  padding: 40px;
+}
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+
+.reveal .progress span {
+  background: #333333;
+}
+
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="title-slide">
+        <h1>Introduction to Slides Factory</h1>
+        <h2>A reproducible slide generation system</h2>
+      </section>
+
+      <section data-timing="5">
+        <h2>What is Slides Factory?</h2>
+        <ul><li>Converts plain text outlines to presentations</li><li>Generates animated HTML slides</li><li>Exports to 4K video</li><li>Fully themeable and customizable</li></ul>
+      </section>
+      <section data-timing="5">
+        <h2>The Workflow</h2>
+        <ul><li>Write your content in plain text</li><li>Parse into structured YAML format</li><li>Edit and refine the intermediate format</li><li>Build HTML slides with reveal.js</li><li>Preview and iterate</li><li>Export to video when ready</li></ul>
+      </section>
+      <section data-timing="5">
+        <h2>Input Format</h2>
+        <p>Simple markdown-like syntax:</p>
+        <pre><code class="language-markdown"># Slide Title
+- Bullet point
+- Another point
+  - Nested item</code></pre>
+      </section>
+      <section data-timing="5">
+        <h2>Themes Available</h2>
+        <ul><li>**Minimal**: Clean and simple</li><li>**Dark**: Modern dark mode</li><li>**Corporate**: Professional polish</li></ul>
+        <p>Custom themes are easy to add!</p>
+      </section>
+      <section data-timing="5">
+        <h2>Video Export</h2>
+        <ul><li>4K resolution (3840x2160)</li><li>Configurable timing per slide</li><li>Smooth transitions</li><li>MP4 format with H.264</li></ul>
+      </section>
+      <section data-timing="5">
+        <h2>Getting Started</h2>
+        <p>1. Edit `input/outline.txt`</p>
+        <p>2. Run `npm run parse`</p>
+        <p>3. Run `npm run build`</p>
+        <p>4. Run `npm run preview`</p>
+        <p>5. Run `npm run render`</p>
+      </section>
+      <section data-timing="5">
+        <h2>Thank You!</h2>
+        <p>Start creating beautiful presentations today.</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      transition: 'fade',
+      transitionSpeed: 'default',
+      autoSlide: 0,
+      controls: true,
+      progress: true,
+      center: true,
+      width: 1920,
+      height: 1080
+    });
+  </script>
+</body>
+</html>

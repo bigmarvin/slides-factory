@@ -1,0 +1,27 @@
+# Slides Factory Configuration
+
+# Theme: minimal, dark, or corporate
+theme: minimal
+
+# Slide transition effect: none, fade, slide, convex, concave, zoom
+transition: fade
+
+# Timing settings
+timing:
+  default: 5          # Default seconds per slide
+  transition: 0.8     # Transition duration in seconds
+
+# Video settings
+video:
+  width: 3840         # 4K width
+  height: 2160        # 4K height
+  fps: 30             # Frames per second
+  format: mp4         # Output format
+
+# Paths (relative to project root)
+paths:
+  input: input
+  content: content
+  output: output
+  themes: themes
+  templates: templates

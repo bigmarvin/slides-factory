@@ -1,0 +1,70 @@
+# Introduction to Slides Factory
+## A reproducible slide generation system
+
+---
+
+# What is Slides Factory?
+
+- Converts plain text outlines to presentations
+- Generates animated HTML slides
+- Exports to 4K video
+- Fully themeable and customizable
+
+---
+
+# The Workflow
+
+- Write your content in plain text
+- Parse into structured YAML format
+- Edit and refine the intermediate format
+- Build HTML slides with reveal.js
+- Preview and iterate
+- Export to video when ready
+
+---
+
+# Input Format
+
+Simple markdown-like syntax:
+
+```markdown
+# Slide Title
+- Bullet point
+- Another point
+  - Nested item
+```
+
+---
+
+# Themes Available
+
+- **Minimal**: Clean and simple
+- **Dark**: Modern dark mode
+- **Corporate**: Professional polish
+
+Custom themes are easy to add!
+
+---
+
+# Video Export
+
+- 4K resolution (3840x2160)
+- Configurable timing per slide
+- Smooth transitions
+- MP4 format with H.264
+
+---
+
+# Getting Started
+
+1. Edit `input/outline.txt`
+2. Run `npm run parse`
+3. Run `npm run build`
+4. Run `npm run preview`
+5. Run `npm run render`
+
+---
+
+# Thank You!
+
+Start creating beautiful presentations today.
