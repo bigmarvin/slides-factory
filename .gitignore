@@ -1,10 +1,9 @@
 node_modules/
 .temp-frames/
 
-# Presentation outputs (optional - uncomment to track)
-# presentations/*/slides.html
-# presentations/*/slides.mp4
-# presentations/*/slides.yaml
+# Presentation outputs - ignore all except demo-talk (example)
+presentations/*
+!presentations/demo-talk/
 
 # Keep sample output for demo
 !output/slides.html
